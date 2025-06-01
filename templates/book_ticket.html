@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>book_ticket</title>
+    
+</head>
+<body>
+  <div class="second_header">
+    <a href="/">
+      <img src="{{ url_for('static', filename='white mini logo.png') }}" alt="Background Image">
+    </a>
+    </div>
+
+    <form method="post" action="/book_ticket">
+      <div class="selectbox">
+        <label for="Adults">Adults:</label>
+        <select id="Adults" name="Adults">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="selectboxtop">
+        <label for="student">Student:</label>
+        <select id="student" name="student">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="selectboxtop">
+        <label for="child">Child:</label>
+        <select id="child" name="child">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="selectboxtop">
+        <label for="infant">Infant:</label>
+        <select id="infant" name="infant">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="selectbutton">
+        <button type="submit">Confirm</button>
+
+      </div>
+    </form>
+    

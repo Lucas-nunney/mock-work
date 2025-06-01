@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>conservation</title>
+    
+</head>
+<style>
+  body{
+    background-color: #097241;
+    background-image: url('../static/penguins2.jpg');
+    background-repeat: no-repeat;
+    background-size:  1920px 1280px;
+    background-position-x: right;
+    background-position-y:-15px;
+    border-image: 0%;
+    margin: 0;
+    padding: 0;
+    
+}
+<!--used to import the image needed with the correct resolution for the image-->
+
+
+</style>
+<body>
+    <h1>Riget zoo adventures opening times today: 10am - 4pm (Last entry at 3pm) </h1>
+    <p style="background-image: url('backgroud.jpg');"></p>
+    <div class="first-menu">
+      <ul>
+          <li><a href="/"> <img src="{{ url_for('static', filename='mini logo.png') }}" alt="Background Image"></a></li>
+          <li><a href="visit">Visit</a></li>
+          <li><a href="conservation">Conservation</a></li>
+          <li><a href="join_main">Join</a></li>
+          <li><a href="book_main">Book</a></li>
+  
+        </ul>
+      </div>
+
+
+      <br><br><br><br><br>
+      <div class="login-signup">
+        <img src="{{ url_for('static', filename='logo3.png') }}">
+        <a>BECOME A MEMBER</a>
+      
+        <form action="{{ url_for('join_signup') }}" method="POST">
+          <input type="text" id="email" name="email" placeholder="email" required>
+          <input type="password" id="password" name="password" placeholder="password" required>
+      
+          <div class="selectbutton">
+            <button type="submit">Confirm</button>
+          </div>
+        </form>
+      </div>
+
+        <br><br><br><br><br>
+</body>
+
+
+</html>

@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>book_ticket</title>
+
+    <div class="second_header">
+      <a href="/">
+        <img src="{{ url_for('static', filename='white mini logo.png') }}" alt="Logo">
+      </a>
+    </div>
+    
+    <br>    <br>    <br>    <br>   
+
+
+</head>
+<div class="login-signup">
+<img src="{{ url_for('static', filename='logo3.png') }}">
+<a>Payment Details</a>
+
+<p><strong>Adult Tickets:</strong> {{ ticket_info['adult'] }}</p>
+<p><strong>Student Tickets:</strong> {{ ticket_info['student'] }}</p>
+<p><strong>Child Tickets:</strong> {{ ticket_info['child'] }}</p>
+<p><strong>Infant Tickets:</strong> {{ ticket_info['infant'] }}</p>
+<p><strong>price: £</strong> {{ total_tickets }}</p>
+<a href="/">
+  <button>confirm</button>
+</div>
+
+
+  </a>
+ </div>

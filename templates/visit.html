@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>visit</title>
+    
+</head>
+<style>
+  body{
+    background-color: #097241;
+    background-image: url('../static/backgroundfade.jpg');
+    background-repeat: no-repeat;
+    background-size:  1920px 1080px;
+    background-position-x: right;
+    background-position-y:-15px;
+    border-image: 0%;
+    margin: 0;
+    padding: 0;
+}
+<!--used to import the image needed with the correct resolution for the image-->
+
+</style>
+<body>
+    <h1>Riget zoo adventures opening times today: 10am - 4pm (Last entry at 3pm) </h1>
+    <p style="background-image: url('backgroud.jpg');"></p>
+    <div class="first-menu">
+      <ul>
+          <li><a href="/"> <img src="{{ url_for('static', filename='mini logo.png') }}" alt="Background Image"></a></li>
+          <li><a href="visit">Visit</a></li>
+          <li><a href="conservation">Conservation</a></li>
+          <li><a href="join_main">Join</a></li>
+          <li><a href="book_main">Book</a></li>
+  
+        </ul>
+      </div>
+
+      <div class="second-menu">
+        <ul>
+            <li><a href="login">login</a></li>
+            <li><a href="join_signup">join</a></li>
+            <li><a href="book_main">book</a></li>
+          </ul>
+         </div>
+
+
+
+
+   <div class="centeraltext">
+        <p>TICKETS, MEMBERSHIP & EXPERIENCES</p>
+        <a>explore everything that riget zoo has to offer with thousands of animals and events happening every day </a>
+        </div>
+
+
+
+         <div class="animals">
+          <img src="{{ url_for('static', filename='penguins.jpg') }}">
+          <p>              Penguins are one of the most popular attractions at zoos, captivating visitors with their charming appearance and playful behavior. At the zoo, penguins provide an opportunity for people to learn about these fascinating birds and their natural behaviors, as well as the environmental challenges they face.
+
+            Zoos typically house a variety of penguin species, ranging from the larger Emperor Penguins to smaller species like the Little Blue Penguins or the African Penguins. Enclosures are designed to closely mimic the penguins' natural habitats, with pools for swimming, rocks for climbing, and areas that simulate cold or temperate climates depending on the species.
+            
+            Penguins at zoos are often part of conservation programs aimed at educating the public about the threats penguins face in the wild, such as climate change, overfishing, and pollution. Many zoos also participate in breeding programs to help maintain healthy penguin populations and support the conservation of endangered species.
+            
+            Visitors to zoos can observe penguins as they swim gracefully, waddle around on land, or interact with their fellow colony members. Educational talks and feeding sessions allow guests to learn more about penguin behaviors, diets, and the importance of protecting their natural habitats.</p>
+            
+          </div>
+
+            <div class="animals_secondary">
+              <img src="{{ url_for('static', filename='lion.jpg') }}">
+              <p>             
+                The lion, often referred to as the "king of the jungle," is a majestic and powerful creature that symbolizes strength, courage, and nobility. With its thick, golden mane that flows around its face and neck, the lion exudes an aura of dominance and pride, making it one of the most iconic animals in the animal kingdom. Native to the savannas, grasslands, and open woodlands of sub-Saharan Africa, lions are social animals that form complex group structures called prides. A pride typically consists of related females, their cubs, and a small number of dominant males, although prides can vary in size and composition. Cooperation and teamwork are essential within the pride, as lions hunt and protect each other from predators and threats.
+
+                Lions are apex predators, sitting at the top of the food chain, and their hunting strategies are highly sophisticated. While lionesses do most of the hunting, often in the cover of the night or early morning, the pride works together to take down large herbivores like zebras, antelopes, and buffalo. Lions rely on their strength, speed, and teamwork to bring down prey, but their success in the hunt often depends on their ability to work as a coordinated unit. Despite their fearsome reputation as hunters, lions are also known for their playful behaviors, especially the young cubs, who spend much of their early life learning to pounce, chase, and play fight with their siblings. These playful interactions help to build bonds within the pride and teach essential skills for survival.
+                
+                Lions communicate with one another through a range of vocalizations, including roars, growls, and grunts. Their roars, which can be heard from miles away, are not just a display of power but also serve as a way to mark territory, signal strength, and ward off rival males. The roar of a lion is one of the most recognizable sounds in the animal world, and it echoes through the vast African landscapes, reminding all who hear it of the lion's dominance in its realm.              </div>
+    
+            <div class="animals_secondary">
+              <img src="{{ url_for('static', filename='orangutan.jpg') }}">
+              <p>             
+                Orangutans, known as the "people of the forest," are captivating creatures that enchant visitors with their intelligence, charm, and unique behavior. Native to the rainforests of Borneo and Sumatra, these gentle apes are easily recognizable by their long, reddish-orange hair and expressive faces. Orangutans are arboreal, spending most of their lives high in the trees, where they use their powerful arms to navigate the forest canopy with grace and precision. These primates are renowned for their intelligence, often using tools like sticks to retrieve insects or leaves as makeshift umbrellas during rain showers. Orangutans are solitary by nature, unlike other apes, but they form strong bonds with their offspring, with mothers dedicating years to nurturing and teaching their young the skills needed for survival. Sadly, these incredible creatures face significant threats in the wild, including habitat destruction due to logging and palm oil plantations, as well as poaching. Observing orangutans in a zoo setting not only provides a chance to admire their remarkable abilities but also highlights the urgent need for conservation efforts to protect their dwindling populations. Modern zoos play a crucial role in raising awareness, supporting habitat restoration projects, and participating in breeding programs to secure a future for these endangered apes. Through education and engagement, visitors can learn how their choices, such as supporting sustainable products, can directly contribute to the survival of orangutans and their rainforest homes.             </div>
+    
+                <div class="animals_secondary">
+                  <img src="{{ url_for('static', filename='bear.jpg') }}">
+                  <p>Bears are some of the most iconic and diverse animals found in the wild, and they never fail to captivate visitors with their strength, intelligence, and unique adaptations. Found across various habitats ranging from dense forests and tundras to mountain ranges and coastal regions, bears are a fascinating family of mammals that include species such as grizzly bears, polar bears, black bears, and the beloved giant panda. Each species has distinct characteristics, from the massive size and powerful build of a grizzly to the playful demeanor and bamboo diet of a panda. Bears are incredibly resourceful, with diets that vary from strictly herbivorous, like the panda, to omnivorous species that consume plants, fish, and even insects. Their thick fur and strong claws allow them to thrive in diverse environments, whether they’re fishing in icy rivers or climbing trees in search of food. Observing bears in a zoo setting offers a chance to learn about their complex behaviors, such as hibernation, communication through vocalizations and body language, and their role as keystone species in their ecosystems. Unfortunately, many bear species face threats from habitat destruction, climate change, and poaching, making conservation efforts critical. Zoos play a vital role in these efforts by raising awareness, funding habitat restoration, and participating in breeding programs to protect endangered species like the polar bear and panda. By educating visitors about the importance of coexistence and conservation, zoos inspire action to ensure that these majestic animals continue to thrive in the wild for future generations.             </div>
+            <!--filler text generated by ai to show what it would look like to have a zoo website with information about all the animals-->
+
+<br><br><br><br><br>
+
+
+         
+</body>
+
+
+</html>
+

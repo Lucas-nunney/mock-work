@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>book3</title>
+    
+</head>
+<body>
+  <div class="second_header">
+    <a href="/">
+      <img src="{{ url_for('static', filename='white mini logo.png') }}" alt="Background Image">
+    </a>
+    </div>
+
+        <br><br><br><br><br>
+
+       <div class="login-signup">
+       <img src="{{ url_for('static', filename='logo3.png') }}">
+        <a>LOGIN MENU </a>
+        <form action="{{ url_for('book_login') }}" method="POST">
+        <input type="text" id="email" name="email" placeholder="email" required>
+        <input type="password" id="password" name="password" placeholder="password" required>
+        <button type="submit">Confirm</button>
+         </div>
+
+  
+        </div>
+
+        <br><br><br><br><br>
+</body>
+
+
+</html>

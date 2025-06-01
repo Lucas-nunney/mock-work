@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>conservation</title>
+    
+</head>
+<style>
+  body{
+    background-color: #097241;
+    background-size:  1920px 1280px;
+    background-position-x: right;
+    background-position-y:-15px;
+    border-image: 0%;
+    margin: 0;
+    padding: 0;
+}
+<!--used to import the image needed with the correct resolution for the image-->
+
+
+</style>
+<body>
+    <h1>Riget zoo adventures opening times today: 10am - 4pm (Last entry at 3pm) </h1>
+    <p style="background-image: url('backgroud.jpg');"></p>
+    <div class="first-menu">
+      <ul>
+          <li><a href="/"> <img src="{{ url_for('static', filename='mini logo.png') }}" alt="Background Image"></a></li>
+          <li><a href="visit">Visit</a></li>
+          <li><a href="conservation">Conservation</a></li>
+          <li><a href="join_main">Join</a></li>
+          <li><a href="book_main">Book</a></li>
+  
+        </ul>
+      </div>
+
+      <div class="second-menu">
+        <ul>
+            <li><a href="login">login</a></li>
+            <li><a href="join_signup">join</a></li>
+            <li><a href="book_main">book</a></li>
+          </ul>
+         </div>
+
+
+       <div class="login-signup">
+       <img src="{{ url_for('static', filename='logo.png') }}">
+
+        <input type="text" placeholder="email">
+        <input type="password" placeholder="password">
+        <button>confirm</button>
+         </div>
+
+        <br><br><br><br><br>
+</body>
+
+
+</html>
